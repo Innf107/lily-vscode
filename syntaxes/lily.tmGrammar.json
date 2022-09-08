@@ -1,0 +1,27 @@
+{
+    "name": "Lily",
+    "scopeName": "source.lily",
+    "patterns": [
+        {
+            "name": "keyword.control.lily",
+            "match": "\\b(let|in|Type)\\b"
+        },
+        {
+            "name": "comment.line.lily",
+            "match": "--.*$",
+            "comment": "Line comment"
+        },
+        { "include": "#operator" }
+    ],
+    "repository": {
+        "operator": {
+            "name": "keyword.operator.lily",
+            "patterns": [
+                {
+                    "name": "keyword.operator.lily",
+                    "match": "λ|\b->\b"
+                }
+            ]
+        }
+    }
+}
